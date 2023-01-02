@@ -18,20 +18,22 @@ class HomeScreen extends StatelessWidget {
       ),
       
       body: ListView.separated(
+        
         itemBuilder:(context, index) =>  ListTile(
           leading: Icon( menuOptions[index].icon, color: AppTheme.primary,),
-          title: Text( menuOptions[index].name, style: const TextStyle(fontSize: 20), ),
+          title: Text( menuOptions[index].name, style: const TextStyle(fontSize: 18), ),
           onTap: () {
-            
            // final route = MaterialPageRoute(
            //   builder:(context) => Listview1Screen() );
-             
               Navigator.pushNamed( context,  menuOptions[index].route);
-
           },
+          
+          
         ),  
-        separatorBuilder:(_ , __) => const Divider(), 
-        itemCount: menuOptions.length
+        
+        separatorBuilder:(_, __) => const Divider(color: Colors.black45, height: 8,), //Separacion
+        itemCount: menuOptions.length,
+        
         ),
       );
   }

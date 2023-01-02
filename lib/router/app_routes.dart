@@ -15,14 +15,13 @@ class AppRoutes {  //Rutas de la app
 
   static final menuOptions = <MenuOption> [  //Menu de opciones con las difertenes screens de mi app
 
-    //TODO: BORRAR HOME
  
     MenuOption (route: "home", name: "Home screen", screen: const HomeScreen(), icon: Icons.home),
     MenuOption (route: "listview1", name: "Listview 1", screen: const Listview1Screen(), icon: Icons.phone_android),
-    MenuOption (route: "listview2", name: "Listview 2", screen: const Listview2Screen(), icon: Icons.phone_android),
+    MenuOption (route: "listview2", name: "Listview 2", screen: const Listview2Screen(), icon: Icons.inbox_sharp),
     MenuOption (route: "alert", name: "Alerts", screen: const AlertScreen(), icon: Icons.warning_amber_rounded),
     MenuOption (route: "card", name: "Cards", screen: const CardScreen(), icon: Icons.camera_front_outlined),
-  
+    MenuOption (route: "avatar", name: "Circle Avatar", screen: const AvatarScreen(),  icon: Icons.supervised_user_circle_outlined )
   ];
 
 
