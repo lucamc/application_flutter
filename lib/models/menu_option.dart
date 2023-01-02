@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart' show IconData, Widget;
 
-class MenuOption {
+class MenuOption { //Clase menu option
 
   final String route;
   final IconData icon;

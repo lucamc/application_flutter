@@ -8,12 +8,12 @@ import '../screens/screens.dart';
 
 
 
-class AppRoutes {
+class AppRoutes {  //Rutas de la app
 
   static const initialRoute = 'home';
 
 
-  static final menuOptions = <MenuOption> [
+  static final menuOptions = <MenuOption> [  //Menu de opciones con las difertenes screens de mi app
 
     //TODO: BORRAR HOME
  

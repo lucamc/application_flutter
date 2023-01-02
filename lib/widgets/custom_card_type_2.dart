@@ -3,13 +3,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/theme/app_theme.dart';
 
+
+
 class CustomCardType2 extends StatelessWidget {
    
   
   String pathImage = "https://img.freepik.com/premium-vector/meadows-landscape-with-mountains-hill_104785-943.jpg?w=2000";
   String pathTitle = "Hermoso Paisaje";
 
-  CustomCardType2(this.pathImage, this.pathTitle);
+
+    CustomCardType2({super.key, 
+    required this.pathImage, 
+    required this.pathTitle, 
+    });
   
 
   @override
@@ -17,14 +23,15 @@ class CustomCardType2 extends StatelessWidget {
     
       final cardImage = Card(
         clipBehavior: Clip.antiAlias,
-        shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12) ),
+        shape: RoundedRectangleBorder(  //Para bordear todos los bordes
+        borderRadius: BorderRadius.circular(12) 
+        ),
         elevation: 12,
         shadowColor: AppTheme.primary.withOpacity(0.4),
         child: Column(
           children:   [
 
-                 Image(
+                 Image(    //Widget de Imagen
               image:  NetworkImage(pathImage), 
               width: double.infinity,
               height: 230,

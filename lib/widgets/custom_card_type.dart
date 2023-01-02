@@ -19,7 +19,7 @@ class CustomCardType extends StatelessWidget {
             elevation: 2,
             child:  Column(
               children:   [
-                  const ListTile (
+                  const ListTile (    //Crear una lista de card con texto
                   leading:  Icon(Icons.adb_outlined, color: AppTheme.primary,),
                   title: Text("Titulo"),
                   subtitle: Text("Laborum labore consequat aute proident. Elit eu magna quis laborum ex proident elit nulla adipisicing nulla cillum et fugiat. Irure enim dolore fugiat ex ex ullamco.."),
